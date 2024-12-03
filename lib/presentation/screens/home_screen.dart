@@ -4,14 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'schedule_screen.dart';
 import 'teacher_screen.dart';
-import 'home_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Início'),
+        title: const Text('Cronograma'),
         titleTextStyle: const TextStyle(
           color: Colors.white,
           fontSize: 20,
