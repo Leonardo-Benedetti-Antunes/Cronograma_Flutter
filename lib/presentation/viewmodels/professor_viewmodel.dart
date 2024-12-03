@@ -5,7 +5,7 @@ import 'package:cronograma_frontend/data/models/professor_model.dart';
 class ProfessorViewmodel {
   static Future<List<ProfessorModel>> fetchProfessor() async {
     try {
-      final response = await http.get(Uri.parse("http://localhost:8080/professor"));
+      final response = await http.get(Uri.parse("http://10.0.2.2:8080/professor"));
 
       if (response.statusCode == 200) {
         final List<dynamic> data = json.decode(response.body);
